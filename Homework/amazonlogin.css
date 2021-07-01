@@ -1,0 +1,26 @@
+.separator{
+    display: flex;
+    align-items: center;
+}
+
+.separator:before, .separator:after{ 
+    content:"";
+    flex: 1;
+    border-bottom: 1px solid;
+}
+
+.separator:not(:empty)::before {
+    margin-right: .25em;
+  }
+  
+  .separator:not(:empty)::after {
+    margin-left: .25em;
+  }
+
+  .text-end{
+      justify-content: space-around;
+  }
+
+  body{
+      font-family: arial,sans-serif;
+  }
